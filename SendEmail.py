@@ -8,6 +8,7 @@ from DataAnalysis import minima
 from DataAnalysis import atual
 
 
+
 #position = pyautogui.position()
 #print(position)
 
@@ -16,7 +17,8 @@ chrome_path = "C:/Program Files/Google/Chrome/Application/chrome.exe %s"
 
 webbrowser.get(chrome_path).open(url)
 
-pyautogui.PAUSE = 2
+pyautogui.PAUSE = 5 
+pyautogui.click(x=644, y=49)
 
 pyautogui.hotkey("ctrl", "t")
 
@@ -28,7 +30,6 @@ time.sleep(10)
 
 pyautogui.click(x=56, y=205)
 
-pyperclip.copy("gestor@email.com")
 pyautogui.hotkey("ctrl", "v")
 pyautogui.hotkey("tab")
 
@@ -54,3 +55,4 @@ pyautogui.hotkey("ctrl", "v")
 pyautogui.click(x=1288, y=1008)
 
 
+    
